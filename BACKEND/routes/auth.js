@@ -6,10 +6,10 @@ const { body, validationResult } = require('express-validator');
 const mysql = require('mysql2');
 
 const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME
+  host: process.env.DB_localhost,
+  user: process.env.DB_root,
+  password:process.env.DB_root ,  
+  database: process.env.DB_location_films , 
 });
 
 // Register route
